@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Início - Netflix</title>
+    <link rel="stylesheet" href="style-m-conta.css">
+    <link rel="shortcut icon" href="../favicoon.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <div>
+            <div id="titulo">
+                <h2>Minha Netflix</h2>
+            </div>
+            <div id="iconeslat">
+                <img id="chrome" src="../imagens/chrome.png">
+                <img id="lupa" src="../imagens/lupa.png">
+                <img id="conf" src="../imagens/conf.png">   
+            </div>
+        </div>                 
+    </header>
+    <main>
+        <article id="foto">
+            <img src="../imagens/LaryssaPerfil.png">
+            <a onclick="menufooter('paratrocarperfil')" href="#"><h2>Laryssa</h2><img id="setapbaixo" src="../imagens/setapbaixo.png"></a>
+        </article>
+
+        <article class="notdow" style="padding-top: 30px;">
+            <a href="#"><img src="../imagens/notificaçoes.png"><p>Notificações</p></a>
+            <img id="setpdireita" style="margin-left: 45%;" src="../imagens/setapdireita.png">
+        </article>
+        <article class="notdow" style="padding-top: 10px;">
+            <a href="#"><img src="../imagens/Download.png"><p>Downloads&nbsp;&nbsp;</p></a>
+            <img id="setpdireita" style="margin-left: 45%;" src="../imagens/setapdireita.png">
+        </article>
+
+        <article>
+            <h2>Séries e filmes que voce curtiu</h2>
+            <div> 
+                <img class=" primeiro" src="../imagens/filmes.series/annewithan2.png">
+                <img src="../imagens/filmes.series/pontocego2.png">
+                <img src="../imagens/filmes.series/dark2.png">
+            </div>
+        </article>
+
+        <article>
+            <div id="mlist">
+                <h2>Minha lista</h2> <a href="my-list.html"><img src="../imagens/setapdireita.png"></a>
+            </div>
+            <div> 
+                <img class=" primeiro" src="../imagens/filmes.series/todomundomeama2.png">
+                <img src="../imagens/filmes.series/goldenkamuy2.png">
+                <img src="../imagens/filmes.series/the8show2.png">
+            </div>
+        </article>
+
+        <article id="ultimo">
+            <h2>Continuar assistindo como Laryssa</h2>
+            <div style="justify-content: left;">
+                <img class=" primeiro continuar2" src="../imagens/filmes.series/donna2.png" alt="">
+                <img class="continuar2" src="../imagens/filmes.series/lucifer2.png" alt="">
+                <img class="continuar2" src="../imagens/filmes.series/bobespoja2.png" alt="">
+            </div>
+        </article>
+
+    </main>
+
+    <footer id="principal">
+        <div>
+            <a id="primeirof" href="../browse.html"><img style="height: 25px; padding-top: 7px; " src="../imagens/casa.png"><div><p style="margin-left: 3px;">Início</p></div></a>
+            <a href="#"><img src="../imagens/game.png"><div><p style="margin-left: 1px;">Jogos</p></div></a>
+            <a href="#"><img src="../imagens/nvdds.png"><div><p style="margin-left: -3px;">Novidade</p></div></a>
+            <a href="#"><img src="../imagens/LaryssaPerfil.png"><div><p style="margin-left: -12px;">Minha netflix</p></div></a>
+        </div>
+
+        <div id="paratrocarperfil">
+            <div id="todos">
+                <div id="parte1">
+                    <h1>Troque de perfil</h1>
+                    <img src="../imagens/X.png" alt="X">
+                </div>
+                <div id="parte2">
+                    <a style="margin-left: 45px;" href="#"><img src="../imagens/LaryssaPerfil.png" alt="Laryssa"><p style="padding-left: 2px;">Laryssa</p></a>
+                    <a href="#"><img src="../imagens/GisaPerfil.png" alt="Gisa"><p style="padding-left: 10px;">Gisa</p></a>
+                    <a href="#"><img src="../imagens/MatheusPerfil.png" alt="Matheus"><p style="padding-left: 10px;">Math</p></a>
+                    <a href="#"><img src="../imagens/SaraPerfil.png" alt="Sara"><p style="padding-left: 7px;">Sarita</p></a>
+                    <a href="#"><img src="../imagens/InfantilPerfil.png" alt="Infantil"><p style="padding-left: 7px;">Infantil</p></a>
+                </div>
+                <div id="parte3">
+                    <img src="../imagens/lapis.png" alt="">
+                    <a href="../ManageProfiles.html"><h1>Gerenciar perfis</h1></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function menufooter(elemento){
+            var display = document.getElementById(elemento).style.display;
+            if (display == 'none'){ //vai dxar o 2º footer block
+                document.getElementById(elemento).style.display = 'block';
+                display.addEventListener('click', clicar1)
+            }else{ //vai dxar o 2º footer none
+                document.getElementById(elemento).style.display = 'none';
+                display.addEventListener('click', clicar2)
+            }
+        }
+        function clicar1(){ //vai dxar o principal none
+            var principal = document.getElementById('principal')
+            document.getElementById('principal').style.display = 'none';
+        }
+        function clicar2() { //vai dxar o principal block
+            var principal = document.getElementById('principal')
+            document.getElementById('principal').style.display = 'block';
+        }
+    </script>
+</body>
+</html>

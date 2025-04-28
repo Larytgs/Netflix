@@ -1,0 +1,259 @@
+@charset "UTF8";
+
+@font-face {
+    font-family: 'Elegante';
+    src: url(fontes/Elegante\ Classica.ttf);
+}
+
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    color: white;
+    background-color: #0e0d0d;
+
+    overflow-x: hidden; /*tirando a rolagem horizontal*/
+} /*colocar border-radius em cima*/
+
+article div h2{
+    font-size: 1.09em;
+    color: rgba(255, 255, 255, 0.863);
+    padding-left: 4%;
+    padding-top: 35px;
+}
+article div img{
+    width: 245px; height: 140px;
+    border-radius: 2px;
+    padding-top: 10px;
+    cursor: pointer;
+}
+
+footer{
+    display: none;
+}
+
+@media (max-width: 450px){  
+ 
+    body{
+        overflow-x: hidden; /*tirando a rolagem horizontal*/
+    }
+
+    header{
+        position: sticky; /*grudavel*/
+        top: -1px;
+        background-color: #070707af;
+    }
+    header div{
+        display: flex;
+        justify-content: space-between; /*espaçamento igual*/
+    }
+    header #titulo{
+        font-size: 0.9em;
+        padding: 10px;
+    }
+    
+    #iconeslat{
+        margin-top: 13px;
+    }
+    header #chrome{
+        width: 22px; height: 19px;
+        padding-right: 15px;
+    }
+    header #lupa{
+        width: 22px; height: 22px; 
+        padding-right: 13px;
+        /*colocar animation na lupa*/
+    }
+    header #conf{
+        width: 28px; height: 26px;
+        padding-top: 0px;
+        padding-right: 5px;
+    }
+
+    #foto{
+        text-align: center;
+    }
+    #foto img{
+        text-align: center;
+        padding-top: 10px;
+        margin-bottom: -32px;
+        width: 80px;
+        border-radius: 10px;
+    }
+    #foto a{
+        display: flex;
+        text-align: center;
+        text-decoration: none;
+        color: white;
+    }
+    #foto h2{
+        font-size: 1.3em;
+        padding-left: 35%;
+        margin-top: 0px;
+    }
+    #foto #setapbaixo{
+        display: flex;
+        width: 18px; height: 15px;
+        margin-left: 8px;
+        margin-top: 32px;
+    }
+
+    .notdow{
+        display: flex; /*coloquei na lateral os icones*/
+        justify-content: space-between; /*espaçamento igual*/
+    }
+    .notdow a{
+        display: flex;
+        padding-left: 2%;
+        text-decoration: none;
+    }
+    .notdow img{
+        width: 38px; height: 35px;
+    }
+    .notdow p{
+        color: white;
+        margin: 10px;
+        font-size: 1.1em;
+    }
+    .notdow #setpdireita{
+        width: 20px; height: 25px;
+        margin: 8px;
+    }
+
+    article div{
+        display: flex;
+        justify-content: space-between;
+    }
+    article h2{
+        font-size: 1.2em;
+        padding-left: 2%;
+        padding-top: 35px;
+    }
+    article #imagemgrande{
+        display: none;
+    }
+
+    .continuar1{
+        display: none;
+    }
+    .continuar2{
+        display: flex;
+        width: 100px; height: 170px;
+    }
+
+    article #primeiroarticle{
+        display: none;
+    } 
+    article div img{
+        width: 112px; height: 160px;
+        border-radius: 3px;
+        padding-top: 10px;
+        margin-right: 4px;
+        cursor: pointer;
+    }
+    
+    #mlist{
+        display: flex;
+    }
+    #mlist h2{
+        font-size: 1.2em;
+        padding-left: 2%;
+        padding-right: 60%;
+    }
+    #mlist a{
+        padding-top: 6%;
+    }
+    #mlist img{
+        width: 20px; height: 25px;
+    }
+
+    .primeiro{
+        padding-left: 2%;
+    }
+    main #ultimo{
+        margin-bottom: 80px;
+    }
+
+    #principal{
+        display: block;
+        width: 99vh;
+        position: fixed; /*grudavel*/
+        bottom: 0px;
+        background-color: #000000;
+    }
+    #principal div{
+        display: flex;
+    }
+    #principal #primeirof{
+        margin-left: 5%;
+    }
+    #principal img{
+        display: flex;
+        width: 28px; height: 28px;
+        padding-top: 5px;
+        margin-right: 60px;
+    }
+    #principal a{
+        text-decoration: none;
+    }
+    #principal p{
+        margin-top: 5px;
+        margin-bottom: 10px;
+        color: white;
+        font-size: 0.6em;
+        font-weight: 600;
+    }
+
+    footer #paratrocarperfil{
+        display: none;
+        position: fixed; /*grudavel*/
+        bottom: 0px;
+    }
+    footer #todos{
+        display: inline-block;
+        background-color: #000000;
+        width: 400px;
+    }
+    footer #parte1{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 10px;
+        margin-bottom: 8px;
+    }
+    footer #parte1 h1{
+        font-size: 1.4em;
+        font-family: 'Times New Roman', Times, serif;
+        padding-left: 5%;
+    }
+    footer #parte1 img{
+        margin-top: -6px;
+    }
+    footer #parte2 img{
+        display: flex;
+        margin-right: 10px;
+        width: 45px; height: 45px;
+        border-radius: 10px;
+    }
+    footer #parte3{
+        display: flex;
+        margin-bottom: 15px;
+    }
+    footer #parte3 a{
+        text-decoration: none;
+        color: white;
+    }
+    footer #parte3 h1{
+        font-size: 1.1em;
+        font-family: 'Times New Roman', Times, serif;
+        margin-left: -50px;
+        margin-top: 10px;
+    }
+    footer #parte3 img{
+        margin-left: 100px;
+        margin-top: 5px;
+        width: 22px; height: 20px;
+    }
+}
