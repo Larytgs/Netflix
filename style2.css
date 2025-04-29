@@ -170,17 +170,18 @@ header #titulos p:hover {
   /*toda a tabela, junto c os botoes*/
   position: relative; /*para os botoes*/
   overflow: hidden;
+  margin: 0 auto; /* centraliza horizontalmente */
 }
 .cardsCarrossel {
-  /*todos os conhecimentos*/
+  /*todos os filmes/series*/
   display: flex;
   flex-flow: row nowrap;
   box-sizing: content-box;
-  margin: auto;
-  gap: 15px;
+  gap: 0.5%;
+  padding-left: 4%;
 }
 .card {
-  /*cada filme/serie*/
+  /*cada filmes/series*/
   width: 245px;
   height: 140px;
   border-radius: 2px;
@@ -191,7 +192,7 @@ header #titulos p:hover {
   text-align: left;
 }
 .primeiro {
-  padding-left: 4%;
+  padding-left: 3%;
 }
 
 /*botoes para carrossel*/

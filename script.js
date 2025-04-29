@@ -17,63 +17,56 @@ window.addEventListener("scroll", function () {
   }
 });
 
-// Carrossel de fotos
-const container = document.querySelector(".cardsCarrossel");
-let cards = document.querySelectorAll(".card");
-const cardWidth = cards[0].offsetWidth + 10; // Largura do card + gap
-const visibleCards = 1; // Define quantos cards aparecem por vez
-let index = 1; // Começa no primeiro card real
+// Carrossel
+document.querySelectorAll(".carrossel-container").forEach(initCarrossel);
 
-// Ajustar a largura do contêiner para caber os cards visíveis corretamente
-container.style.width = `${visibleCards * cardWidth}px`;
+function initCarrossel(article) {
+  const container = article.querySelector(".cardsCarrossel");
+  const cards = container.querySelectorAll(".card");
+  const visibleCards = 5; // Quantos cards são exibidos por vez
+  let index = 0; // Índice atual do carrossel
+  const cardWidth = cards[0].offsetWidth + 10; // Largura de cada card (incluindo espaço)
 
-// Clonar os primeiros e últimos 3 cards para efeito infinito
-function clonarCards() {
-  const totalCards = cards.length;
-
-  // Clonar os primeiros e últimos `visibleCards` cards
+  // Clona os primeiros 'visibleCards' para o final (loop infinito)
   for (let i = 0; i < visibleCards; i++) {
-    let cloneStart = cards[i].cloneNode(true); // Clona os primeiros
-    let cloneEnd = cards[totalCards - 1 - i].cloneNode(true); // Clona os últimos
-
-    container.appendChild(cloneStart); // Adiciona no final
-    container.insertBefore(cloneEnd, container.firstChild); // Adiciona no início
+    const clone = cards[i].cloneNode(true); // Clona card
+    container.appendChild(clone); // Adiciona no final
   }
+  // Define a largura total do container (com os clones)
+  container.style.width = `${(cards.length + visibleCards) * cardWidth}px`;
 
-  // Atualiza a lista de cards incluindo os clones
-  cards = document.querySelectorAll(".card");
+  // Seleciona os botões dentro do article
+  const leftBtn = article.querySelector(".control-left");
+  const rightBtn = article.querySelector(".control-right");
 
-  // ⚠️ Move a posição inicial do carrossel para o primeiro card real (evitando clones visíveis
-  container.style.transform = `translateX(${-index * cardWidth}px)`;
-}
+  // Evento para mover para a esquerda
+  leftBtn.addEventListener("click", () => move(-1));
+  // Evento para mover para a direita
+  rightBtn.addEventListener("click", () => move(1));
 
-clonarCards();
+  // Função que move o carrossel
+  function move(direction) {
+    index += direction; // Atualiza índice de acordo com a direção
 
-// Função para mover o carrossel
-//A função recebe um parâmetro direcao, que indica se o carrossel deve se mover para frente (1) ou para trás (-1).
-function moverCarrossel(direcao) {
-  container.style.transition = "transform 0.4s ease-in-out"; //Define uma animação
+    // Aplica transição e move
+    container.style.transition = "transform 0.4s ease-in-out";
+    container.style.transform = `translateX(${-index * cardWidth}px)`;
 
-  index += direcao; // Avança o número correto de cards
-  //Se direcao for 1, o carrossel avança para o próximo item.
-  //Se direcao for -1, o carrossel volta para o item anterior.
+    setTimeout(() => {
+      const totalCards = container.querySelectorAll(".card").length;
 
-  container.style.transform = `translateX(${-index * cardWidth}px)`;
-  //Move o carrossel na horizontal multiplicando o índice (index) pela largura do card (cardWidth).
-  //O sinal negativo (-) faz o movimento para a esquerda.
-
-  // Ajusta posição para manter o loop infinito
-  setTimeout(() => {
-    if (index >= cards.length - 1) {
-      // Se estiver no clone do primeiro card, vai para o primeiro real
-      container.style.transition = "none";
-      index = 1;
-      container.style.transform = `translateX(${-index * cardWidth}px)`;
-    } else if (index < 0) {
-      // Se estiver no clone do último card, vai para o último real
-      container.style.transition = "none";
-      index = cards.length - 1;
-      container.style.transform = `translateX(${-index * cardWidth}px)`;
-    }
-  }, 500); //espera 0,5 segundos antes de executar o código dentro dele. Isso dá tempo para a animação terminar antes de fazer ajustes.
+      // Se chegou no final (clones), volta para o início real
+      if (index >= totalCards - visibleCards) {
+        index = 0;
+        container.style.transition = "none";
+        container.style.transform = `translateX(0px)`;
+      }
+      // Se tentou voltar antes do primeiro
+      else if (index < 0) {
+        index = totalCards - visibleCards - 1;
+        container.style.transition = "none";
+        container.style.transform = `translateX(${-index * cardWidth}px)`;
+      }
+    }, 400); // Espera a animação antes de corrigir
+  }
 }

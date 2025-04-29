@@ -125,11 +125,11 @@
         <button class="control control-left" onclick="moverCarrossel(-1)">
           &#10094;
         </button>
-        <div id="primeiroarticle">
+        <div>
           <h2 style="margin-top: -3.3%"></h2>
           <div class="cardsCarrossel">
             <img
-              class="primeiro card"
+              class="card"
               src="imagens/filmes.series/desgraçaAoSeuDispor.png"
               alt=""
             />
@@ -164,44 +164,25 @@
       <article>
         <div>
           <h2>Continuar assistindo como Laryssa</h2>
-          <div class="cardsCarrossel">
-            <img
-              class="primeiro continuar1"
-              src="imagens/filmes.series/diaZero.png"
-            />
-            <img
-              class="primeiro continuar2"
-              src="imagens/filmes.series/diaZero2.png"
-              alt=""
-            />
-
-            <img class="continuar1" src="imagens/filmes.series/lucifer.png" />
-            <img
-              class="continuar2"
-              src="imagens/filmes.series/lucifer2.png"
-              alt=""
-            />
-
-            <img
-              class="continuar1"
-              src="imagens/filmes.series/blackMirror.png"
-            />
-            <img
-              class="continuar2"
-              src="imagens/filmes.series/blackMirror2.png"
-              alt=""
-            />
-
-            <img
-              class="semimagem"
-              style="height: 150px"
-              src="imagens/filmes.series/rainhaDasLagrimas.png"
-            />
-            <img
-              class="semimagem"
-              style="height: 150px"
-              src="imagens/filmes.series/wandinha.png"
-            />
+          <div class="carrossel-container">
+            <button
+              class="control control-left"
+              onclick="moverCarrossel(-1)"
+            ></button>
+            <div class="cardsCarrossel">
+              <img class="card" src="imagens/filmes.series/diaZero.png" />
+              <img class="card" src="imagens/filmes.series/lucifer.png" />
+              <img class="card" src="imagens/filmes.series/blackMirror.png" />
+              <img
+                class="card"
+                src="imagens/filmes.series/rainhaDasLagrimas.png"
+              />
+              <img class="card" src="imagens/filmes.series/wandinha.png" />
+            </div>
+            <button
+              class="control control-right"
+              onclick="moverCarrossel(1)"
+            ></button>
           </div>
         </div>
       </article>
@@ -209,109 +190,81 @@
       <article>
         <div style="margin-top: -15px">
           <h2>Minha lista</h2>
-          <picture>
-            <source
-              media="(max-width: 450px)"
-              srcset="imagens/filmes.series/chefedaCasa2.png"
-              type="image/png"
-            />
-            <img
-              class="primeiro"
-              src="imagens/filmes.series/chefedaCasa.png"
-              alt="normal"
-            />
-          </picture>
-
-          <picture>
-            <source
-              media="(max-width: 450px)"
-              srcset="imagens/filmes.series/goldenkamuy2.png"
-              type="image/png"
-            />
-            <img src="imagens/filmes.series/goldenkamuy.png" alt="normal" />
-          </picture>
-
-          <picture>
-            <source
-              media="(max-width: 450px)"
-              srcset="imagens/filmes.series/medicosEmColapso2.png"
-              type="image/png"
-            />
-            <img
-              src="imagens/filmes.series/medicosEmColapso.png"
-              alt="normal"
-            />
-          </picture>
-
-          <img
-            class="semimagem"
-            src="imagens/filmes.series/umDiaEMeio.png"
-            alt="normal"
-          />
-          <img
-            class="semimagem"
-            src="imagens/filmes.series/oPoço2.png"
-            alt="normal"
-          />
-          <img
-            class="semimagem"
-            src="imagens/filmes.series/brackingBad.png"
-            alt="normal"
-          />
+          <div class="carrossel-container">
+            <button
+              class="control control-left"
+              onclick="moverCarrossel(-1)"
+            ></button>
+            <div class="cardsCarrossel">
+              <img
+                class="card"
+                src="imagens/filmes.series/chefedaCasa.png"
+                alt="normal"
+              />
+              <img
+                class="card"
+                src="imagens/filmes.series/goldenkamuy.png"
+                alt="normal"
+              />
+              <img
+                class="card"
+                src="imagens/filmes.series/medicosEmColapso.png"
+                alt="normal"
+              />
+              <img
+                class="card"
+                src="imagens/filmes.series/umDiaEMeio.png"
+                alt="normal"
+              />
+              <img
+                class="card"
+                src="imagens/filmes.series/oPoço2.png"
+                alt="normal"
+              />
+              <img
+                class="card"
+                src="imagens/filmes.series/brackingBad.png"
+                alt="normal"
+              />
+            </div>
+            <button
+              class="control control-right"
+              onclick="moverCarrossel(1)"
+            ></button>
+          </div>
         </div>
       </article>
 
       <article>
         <div>
           <h2>Ficção científica e fantasia dos EUA</h2>
-          <picture>
+          <div class="carrossel-container">
+            <button
+              class="control control-left"
+              onclick="moverCarrossel(-1)"
+            ></button>
+            <div class="cardsCarrossel">
+              <!-- <picture>
             <source
               media="(max-width: 450px)"
               srcset="imagens/filmes.series/the100-2.png"
               type="image/png"
             />
-            <img class="primeiro" src="imagens/filmes.series/the100.png" />
-          </picture>
-          <picture>
-            <source
-              media="(max-width: 450px)"
-              srcset="imagens/filmes.series/atlas2.png"
-              type="image/png"
-            />
-            <img src="imagens/filmes.series/atlas.png" />
-          </picture>
-          <picture>
-            <source
-              media="(max-width: 450px)"
-              srcset="imagens/filmes.series/manifest2.png"
-              type="image/png"
-            />
-            <img src="imagens/filmes.series/manifest.png" />
-          </picture>
-          <picture>
-            <source
-              media="(max-width: 450px)"
-              srcset="imagens/filmes.series/venom2.png"
-              type="image/png"
-            />
-            <img src="imagens/filmes.series/venom.png" />
-          </picture>
-          <picture>
-            <source
-              media="(max-width: 450px)"
-              srcset="imagens/filmes.series/oProjetoAdam2.png"
-              type="image/png"
-            />
-            <img src="imagens/filmes.series/oProjetoAdam.png" />
-          </picture>
-          <picture>
-            <source
-              media="(max-width: 450px)"
-              srcset="imagens/filmes.series/depoisDaTerra2.png"
-              type="image/png"
-            />
-            <img src="imagens/filmes.series/depoisDaTerra.png" />
-          </picture>
+            <img class="card" src="imagens/filmes.series/the100.png" />
+          </picture> -->
+
+              <img class="card" src="imagens/filmes.series/the100.png" />
+              <img class="card" src="imagens/filmes.series/atlas.png" />
+              <img class="card" src="imagens/filmes.series/manifest.png" />
+              <img class="card" src="imagens/filmes.series/venom.png" />
+              <img class="card" src="imagens/filmes.series/oProjetoAdam.png" />
+              <img class="card" src="imagens/filmes.series/depoisDaTerra.png" />
+            </div>
+            <button
+              class="control control-right"
+              onclick="moverCarrossel(1)"
+            ></button>
+          </div>
         </div>
       </article>
 
@@ -353,77 +306,80 @@
       <article>
         <div>
           <h2>Séries dos EUA</h2>
-          <picture>
+          <div class="carrossel-container">
+            <button
+              class="control control-left"
+              onclick="moverCarrossel(-1)"
+            ></button>
+            <div class="cardsCarrossel">
+              <!-- <picture>
             <source
               media="(max-width: 450px)"
               srcset="imagens/filmes.series/the100-2.png"
               type="image/png"
             />
             <img class="primeiro" src="imagens/filmes.series/outerbanks.png" />
-          </picture>
-          <picture>
-            <source
-              media="(max-width: 450px)"
-              srcset="imagens/filmes.series/suits2.png"
-              type="image/png"
-            />
-            <img src="imagens/filmes.series/suits.png" />
-          </picture>
-          <picture>
-            <source
-              media="(max-width: 450px)"
-              srcset="imagens/filmes.series/pontocego2.png"
-              type="image/png"
-            />
-            <img src="imagens/filmes.series/pontocego.png" />
-          </picture>
-          <img class="semimagem" src="imagens/filmes.series/jovensheldon.png" />
-          <img
-            class="semimagem"
-            src="imagens/filmes.series/agentenoturno.png"
-          />
+          </picture> -->
+
+              <img class="card" src="imagens/filmes.series/outerbanks.png" />
+              <img class="card" src="imagens/filmes.series/suits.png" />
+              <img class="card" src="imagens/filmes.series/pontocego.png" />
+              <img
+                class="card"
+                class="card"
+                src="imagens/filmes.series/jovensheldon.png"
+              />
+              <img class="card" src="imagens/filmes.series/agentenoturno.png" />
+            </div>
+            <button
+              class="control control-right"
+              onclick="moverCarrossel(1)"
+            ></button>
+          </div>
         </div>
       </article>
 
       <article>
         <div>
           <h2>Novidade na Netflix</h2>
-          <picture>
-            <source
-              media="(max-width: 450px)"
-              srcset="imagens/filmes.series/goldenkamuy2.png"
-              type="image/png"
-            />
-            <img class="primeiro" src="imagens/filmes.series/goldenkamuy.png" />
-          </picture>
-          <picture>
-            <source
-              media="(max-width: 450px)"
-              srcset="imagens/filmes.series/aeradogelo3-2.png"
-              type="image/png"
-            />
-            <img src="imagens/filmes.series/aeradogelo3.png" />
-          </picture>
-          <picture>
-            <source
-              media="(max-width: 450px)"
-              srcset="imagens/filmes.series/aeradogeloobigbang2.png"
-              type="image/png"
-            />
-            <img src="imagens/filmes.series/aeradogeloobigbang.png" />
-          </picture>
-
-          <img class="semimagem" src="imagens/filmes.series/close.png" />
-          <img
-            class="semimagem"
-            src="imagens/filmes.series/vendedordeilusoes.png"
-          />
+          <div class="carrossel-container">
+            <button
+              class="control control-left"
+              onclick="moverCarrossel(-1)"
+            ></button>
+            <div class="cardsCarrossel">
+              <!-- <picture>
+              <source
+                media="(max-width: 450px)"
+                srcset="imagens/filmes.series/goldenkamuy2.png"
+                type="image/png"
+              />
+              <img class="primeiro" src="imagens/filmes.series/goldenkamuy.png" />
+            </picture> -->
+              <img class="card" src="imagens/filmes.series/goldenkamuy.png" />
+              <img class="card" src="imagens/filmes.series/aeradogelo3.png" />
+              <img
+                class="card"
+                src="imagens/filmes.series/aeradogeloobigbang.png"
+              />
+              <img class="card" src="imagens/filmes.series/close.png" />
+              <img
+                class="card"
+                src="imagens/filmes.series/vendedordeilusoes.png"
+              />
+            </div>
+            <button
+              class="control control-right"
+              onclick="moverCarrossel(1)"
+            ></button>
+          </div>
         </div>
       </article>
+
       <!--<section class="galary">                       fazer esse no JS futuramente
             <h2>Novidade na Netflix</h2>
             <div class="fotos">
-                <img class="primeiro" src="imagens/filmes.series/goldenkamuy2.png" alt="foto1">
+                <img class="card" src="imagens/filmes.series/goldenkamuy2.png" alt="foto1">
                 <img src="imagens/filmes.series/umafamiliainusitada.png" alt="foto2">
                 <img src="imagens/filmes.series/aeradogelo3.png" alt="foto3">
                 <img src="imagens/filmes.series/aeradogeloobigbang.png" alt="foto4">
@@ -438,80 +394,92 @@
       <article>
         <div>
           <h2>Séries premiadas</h2>
-          <picture>
-            <source
-              media="(max-width: 450px)"
-              srcset="imagens/filmes.series/annewithan2.png"
-              type="image/png"
-            />
-            <img class="primeiro" src="imagens/filmes.series/annewithan.png" />
-          </picture>
-          <picture>
-            <source
-              media="(max-width: 450px)"
-              srcset="imagens/filmes.series/dark2.png"
-              type="image/png"
-            />
-            <img src="imagens/filmes.series/dark.png" />
-          </picture>
-          <picture>
-            <source
-              media="(max-width: 450px)"
-              srcset="imagens/filmes.series/lupin2.png"
-              type="image/png"
-            />
-            <img src="imagens/filmes.series/lupin.png" />
-          </picture>
-          <img
-            class="semimagem"
-            src="imagens/filmes.series/depoisdaCabana.png"
-          />
-          <img
-            class="semimagem"
-            src="imagens/filmes.series/peakyblinders.png"
-          />
+          <div class="carrossel-container">
+            <button
+              class="control control-left"
+              onclick="moverCarrossel(-1)"
+            ></button>
+            <div class="cardsCarrossel">
+              <!-- <picture>
+              <source
+                media="(max-width: 450px)"
+                srcset="imagens/filmes.series/annewithan2.png"
+                type="image/png"
+              />
+              <img class="primeiro" src="imagens/filmes.series/annewithan.png" />
+            </picture> -->
+              <img class="card" src="imagens/filmes.series/annewithan.png" />
+              <img class="card" src="imagens/filmes.series/dark.png" />
+              <img class="card" src="imagens/filmes.series/dark.png" />
+              <img class="card" src="imagens/filmes.series/dark.png" />
+              <img class="card" src="imagens/filmes.series/lupin.png" />
+              <img class="card" src="imagens/filmes.series/peakyblinders.png" />
+              <img src="imagens/filmes.series/lupin.png" />
+              <img
+                class="card"
+                src="imagens/filmes.series/depoisdaCabana.png"
+              />
+              <img
+                class="card"
+                src="imagens/filmes.series/depoisdaCabana.png"
+              />
+              <img class="card" src="imagens/filmes.series/peakyblinders.png" />
+            </div>
+            <button
+              class="control control-right"
+              onclick="moverCarrossel(1)"
+            ></button>
+          </div>
         </div>
       </article>
 
       <article>
         <div>
           <h2>Assistir novamente</h2>
-          <picture>
+          <div class="carrossel-container">
+            <button
+              class="control control-left"
+              onclick="moverCarrossel(-1)"
+            ></button>
+            <div class="cardsCarrossel">
+              <!-- <picture>
             <source
               media="(max-width: 450px)"
               srcset="imagens/filmes.series/therain2.png"
               type="image/png"
             />
             <img class="primeiro" src="imagens/filmes.series/therain.png" />
-          </picture>
-          <picture>
-            <source
-              media="(max-width: 450px)"
-              srcset="imagens/filmes.series/pontocego2.png"
-              type="image/png"
-            />
-            <img src="imagens/filmes.series/pontocego.png" />
-          </picture>
-          <picture>
-            <source
-              media="(max-width: 450px)"
-              srcset="imagens/filmes.series/desgraçaAoSeuDispor2.png"
-              type="image/png"
-            />
-            <img src="imagens/filmes.series/desgraçaAoSeuDispor.png" />
-          </picture>
-          <img class="semimagem" src="imagens/filmes.series/the100.png" />
-          <img
-            class="semimagem"
-            src="imagens/filmes.series/ondeestasegunda.png"
-          />
+          </picture> -->
+              <img class="card" src="imagens/filmes.series/therain.png" />
+              <img class="card" src="imagens/filmes.series/pontocego.png" />
+              <img
+                class="card"
+                src="imagens/filmes.series/desgraçaAoSeuDispor.png"
+              />
+              <img class="card" src="imagens/filmes.series/the100.png" />
+              <img
+                class="card"
+                src="imagens/filmes.series/ondeestasegunda.png"
+              />
+            </div>
+            <button
+              class="control control-right"
+              onclick="moverCarrossel(1)"
+            ></button>
+          </div>
         </div>
       </article>
 
       <article>
         <div>
           <h2>Só na Netflix</h2>
-          <picture>
+          <div class="carrossel-container">
+            <button
+              class="control control-left"
+              onclick="moverCarrossel(-1)"
+            ></button>
+            <div class="cardsCarrossel">
+              <!-- <picture>
             <source
               media="(max-width: 450px)"
               srcset="imagens/filmes.series/peakyblinders2.png"
@@ -520,67 +488,62 @@
             <img
               class="primeiro"
               src="imagens/filmes.series/peakyblinders.png"
-            />
-          </picture>
-          <picture>
-            <source
-              media="(max-width: 450px)"
-              srcset="imagens/filmes.series/barracadobjo2-2.png"
-              type="image/png"
-            />
-            <img src="imagens/filmes.series/barracadobjo2.png" />
-          </picture>
-          <picture>
-            <source
-              media="(max-width: 450px)"
-              srcset="imagens/filmes.series/lacasadepapel2.png"
-              type="image/png"
-            />
-            <img src="imagens/filmes.series/lacasadepapel.png" />
-          </picture>
-          <img
-            class="semimagem"
-            src="imagens/filmes.series/strangerthings.png"
-          />
-          <img
-            class="semimagem"
-            src="imagens/filmes.series/paratodosoaboys.png"
-          />
+            /> -->
+              <img class="card" src="imagens/filmes.series/peakyblinders.png" />
+              <img class="card" src="imagens/filmes.series/barracadobjo2.png" />
+              <img class="card" src="imagens/filmes.series/lacasadepapel.png" />
+              <img
+                class="card"
+                src="imagens/filmes.series/strangerthings.png"
+              />
+              <img
+                class="card"
+                src="imagens/filmes.series/paratodosoaboys.png"
+              />
+            </div>
+            <button
+              class="control control-right"
+              onclick="moverCarrossel(1)"
+            ></button>
+          </div>
         </div>
       </article>
 
       <article id="ultimo">
         <div>
           <h2>Séries asiáticas para suspirar</h2>
-          <picture>
-            <source
-              media="(max-width: 450px)"
-              srcset="imagens/filmes.series/ombroamigo2.png"
-              type="image/png"
-            />
-            <img class="primeiro" src="imagens/filmes.series/ombroamigo.png" />
-          </picture>
-          <picture>
-            <source
-              media="(max-width: 450px)"
-              srcset="imagens/filmes.series/herprivatelife2.png"
-              type="image/png"
-            />
-            <img src="imagens/filmes.series/herprivatelife.png" />
-          </picture>
-          <picture>
-            <source
-              media="(max-width: 450px)"
-              srcset="imagens/filmes.series/herdeiros2.png"
-              type="image/png"
-            />
-            <img src="imagens/filmes.series/herdeiros.png" />
-          </picture>
-          <img class="semimagem" src="imagens/filmes.series/climaDeAmor.png" />
-          <img
-            class="semimagem"
-            src="imagens/filmes.series/todomundomeama.png"
-          />
+          <div class="carrossel-container">
+            <button
+              class="control control-left"
+              onclick="moverCarrossel(-1)"
+            ></button>
+            <div class="cardsCarrossel">
+              <!-- <picture>
+              <source
+                media="(max-width: 450px)"
+                srcset="imagens/filmes.series/ombroamigo2.png"
+                type="image/png"
+              />
+              <img class="primeiro" src="imagens/filmes.series/ombroamigo.png" />
+            </picture> -->
+
+              <img class="card" src="imagens/filmes.series/ombroamigo.png" />
+              <img
+                class="card"
+                src="imagens/filmes.series/herprivatelife.png"
+              />
+              <img class="card" src="imagens/filmes.series/herdeiros.png" />
+              <img class="card" src="imagens/filmes.series/climaDeAmor.png" />
+              <img
+                class="card"
+                src="imagens/filmes.series/todomundomeama.png"
+              />
+            </div>
+            <button
+              class="control control-right"
+              onclick="moverCarrossel(1)"
+            ></button>
+          </div>
         </div>
       </article>
     </main>
