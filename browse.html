@@ -121,71 +121,88 @@
         <div class="espaco"></div>
       </article>
 
-      <article>
+      <article class="carrossel-container">
+        <button class="control control-left" onclick="moverCarrossel(-1)">
+          &#10094;
+        </button>
         <div id="primeiroarticle">
           <h2 style="margin-top: -3.3%"></h2>
-          <img
-            class="primeiro"
-            src="imagens/filmes.series/desgraçaAoSeuDispor.png"
-            alt=""
-          />
-          <img src="imagens/filmes.series/adolescencia.png" alt="" />
-          <img src="imagens/filmes.series/uncharted.png" alt="" />
-          <img
-            class="semimagem"
-            src="imagens/filmes.series/Caosedestruição.png"
-            alt=""
-          />
-          <img
-            class="semimagem"
-            src="imagens/filmes.series/ihostage.png"
-            alt=""
-          />
-          <img
-            class="semimagem"
-            src="imagens/filmes.series/homemAranha.png"
-            alt=""
-          />
+          <div class="cardsCarrossel">
+            <img
+              class="primeiro card"
+              src="imagens/filmes.series/desgraçaAoSeuDispor.png"
+              alt=""
+            />
+            <img
+              class="card"
+              src="imagens/filmes.series/adolescencia.png"
+              alt=""
+            />
+            <img
+              class="card"
+              src="imagens/filmes.series/uncharted.png"
+              alt=""
+            />
+            <img
+              class="card"
+              src="imagens/filmes.series/Caosedestruição.png"
+              alt=""
+            />
+            <img class="card" src="imagens/filmes.series/ihostage.png" alt="" />
+            <img
+              class="card"
+              src="imagens/filmes.series/homemAranha.png"
+              alt=""
+            />
+          </div>
         </div>
+        <button class="control control-right" onclick="moverCarrossel(1)">
+          &#10095;
+        </button>
       </article>
 
       <article>
         <div>
           <h2>Continuar assistindo como Laryssa</h2>
-          <img
-            class="primeiro continuar1"
-            src="imagens/filmes.series/diaZero.png"
-          />
-          <img
-            class="primeiro continuar2"
-            src="imagens/filmes.series/diaZero2.png"
-            alt=""
-          />
+          <div class="cardsCarrossel">
+            <img
+              class="primeiro continuar1"
+              src="imagens/filmes.series/diaZero.png"
+            />
+            <img
+              class="primeiro continuar2"
+              src="imagens/filmes.series/diaZero2.png"
+              alt=""
+            />
 
-          <img class="continuar1" src="imagens/filmes.series/lucifer.png" />
-          <img
-            class="continuar2"
-            src="imagens/filmes.series/lucifer2.png"
-            alt=""
-          />
+            <img class="continuar1" src="imagens/filmes.series/lucifer.png" />
+            <img
+              class="continuar2"
+              src="imagens/filmes.series/lucifer2.png"
+              alt=""
+            />
 
-          <img class="continuar1" src="imagens/filmes.series/blackMirror.png" />
-          <img
-            class="continuar2"
-            src="imagens/filmes.series/blackMirror2.png"
-            alt=""
-          />
+            <img
+              class="continuar1"
+              src="imagens/filmes.series/blackMirror.png"
+            />
+            <img
+              class="continuar2"
+              src="imagens/filmes.series/blackMirror2.png"
+              alt=""
+            />
 
-          <img
-            class="semimagem"
-            style="height: 150px"
-            src="imagens/filmes.series/rainhaDasLagrimas.png"
-          />
-          <img
-            class="semimagem"
-            style="height: 150px"
-            src="imagens/filmes.series/wandinha.png"
-          />
+            <img
+              class="semimagem"
+              style="height: 150px"
+              src="imagens/filmes.series/rainhaDasLagrimas.png"
+            />
+            <img
+              class="semimagem"
+              style="height: 150px"
+              src="imagens/filmes.series/wandinha.png"
+            />
+          </div>
         </div>
       </article>
 
@@ -195,12 +212,12 @@
           <picture>
             <source
               media="(max-width: 450px)"
-              srcset="imagens/filmes.series/todomundomeama2.png"
+              srcset="imagens/filmes.series/chefedaCasa2.png"
               type="image/png"
             />
             <img
               class="primeiro"
-              src="imagens/filmes.series/todomundomeama.png"
+              src="imagens/filmes.series/chefedaCasa.png"
               alt="normal"
             />
           </picture>
@@ -217,20 +234,28 @@
           <picture>
             <source
               media="(max-width: 450px)"
-              srcset="imagens/filmes.series/the8show2.png"
+              srcset="imagens/filmes.series/medicosEmColapso2.png"
               type="image/png"
             />
-            <img src="imagens/filmes.series/the8show.png" alt="normal" />
+            <img
+              src="imagens/filmes.series/medicosEmColapso.png"
+              alt="normal"
+            />
           </picture>
 
           <img
             class="semimagem"
-            src="imagens/filmes.series/cinderela e os 4 cavaleiros.png"
+            src="imagens/filmes.series/umDiaEMeio.png"
             alt="normal"
           />
           <img
             class="semimagem"
-            src="imagens/filmes.series/alquimia das almas.png"
+            src="imagens/filmes.series/oPoço2.png"
+            alt="normal"
+          />
+          <img
+            class="semimagem"
+            src="imagens/filmes.series/brackingBad.png"
             alt="normal"
           />
         </div>
@@ -250,10 +275,10 @@
           <picture>
             <source
               media="(max-width: 450px)"
-              srcset="imagens/filmes.series/wandinha2.png"
+              srcset="imagens/filmes.series/atlas2.png"
               type="image/png"
             />
-            <img src="imagens/filmes.series/wandinha.png" />
+            <img src="imagens/filmes.series/atlas.png" />
           </picture>
           <picture>
             <source
@@ -263,11 +288,30 @@
             />
             <img src="imagens/filmes.series/manifest.png" />
           </picture>
-          <img
-            class="semimagem"
-            src="imagens/filmes.series/shadon hunters.png"
-          />
-          <img class="semimagem" src="imagens/filmes.series/titas.png" />
+          <picture>
+            <source
+              media="(max-width: 450px)"
+              srcset="imagens/filmes.series/venom2.png"
+              type="image/png"
+            />
+            <img src="imagens/filmes.series/venom.png" />
+          </picture>
+          <picture>
+            <source
+              media="(max-width: 450px)"
+              srcset="imagens/filmes.series/oProjetoAdam2.png"
+              type="image/png"
+            />
+            <img src="imagens/filmes.series/oProjetoAdam.png" />
+          </picture>
+          <picture>
+            <source
+              media="(max-width: 450px)"
+              srcset="imagens/filmes.series/depoisDaTerra2.png"
+              type="image/png"
+            />
+            <img src="imagens/filmes.series/depoisDaTerra.png" />
+          </picture>
         </div>
       </article>
 
@@ -418,7 +462,10 @@
             />
             <img src="imagens/filmes.series/lupin.png" />
           </picture>
-          <img class="semimagem" src="imagens/filmes.series/round6.png" />
+          <img
+            class="semimagem"
+            src="imagens/filmes.series/depoisdaCabana.png"
+          />
           <img
             class="semimagem"
             src="imagens/filmes.series/peakyblinders.png"
@@ -448,10 +495,10 @@
           <picture>
             <source
               media="(max-width: 450px)"
-              srcset="imagens/filmes.series/round6-2.png"
+              srcset="imagens/filmes.series/desgraçaAoSeuDispor2.png"
               type="image/png"
             />
-            <img src="imagens/filmes.series/round6.png" />
+            <img src="imagens/filmes.series/desgraçaAoSeuDispor.png" />
           </picture>
           <img class="semimagem" src="imagens/filmes.series/the100.png" />
           <img

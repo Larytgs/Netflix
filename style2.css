@@ -165,31 +165,83 @@ header #titulos p:hover {
 #primeiroarticle {
   z-index: 1;
 }
+
+.carrossel-container {
+  /*toda a tabela, junto c os botoes*/
+  position: relative; /*para os botoes*/
+  overflow: hidden;
+}
+.cardsCarrossel {
+  /*todos os conhecimentos*/
+  display: flex;
+  flex-flow: row nowrap;
+  box-sizing: content-box;
+  margin: auto;
+  gap: 15px;
+}
+.card {
+  /*cada filme/serie*/
+  width: 245px;
+  height: 140px;
+  border-radius: 2px;
+  padding-top: 10px;
+  cursor: pointer;
+  flex-shrink: 0; /* Impede que os cards diminuam */
+  flex-grow: 1;
+  text-align: left;
+}
+.primeiro {
+  padding-left: 4%;
+}
+
+/*botoes para carrossel*/
+.control {
+  position: absolute;
+  background: var(--headerFotter);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 20px;
+  z-index: 10; /*para ele ficar visivel sempre*/
+}
+.control-left {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: auto;
+}
+.control-right {
+  top: 0;
+  bottom: 0;
+  left: auto;
+  right: 0;
+}
+
 article div h2 {
   font-size: 1.1em;
   color: rgba(255, 255, 255, 0.863);
   padding-left: 4%;
   padding-top: 35px;
 }
-article div img {
+/* article div img {
   width: 245px;
   height: 140px;
   border-radius: 2px;
   padding-top: 10px;
   cursor: pointer;
-}
+} */
 .continuar1 {
   height: 150px;
 }
 .continuar2 {
   display: none;
 }
-.primeiro {
-  padding-left: 4%;
-}
+
 #ultimo {
   margin-bottom: 2%;
 }
+
 footer {
   display: none;
 }
