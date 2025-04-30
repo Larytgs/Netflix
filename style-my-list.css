@@ -164,6 +164,8 @@ header a:hover {
 
 #paranote {
   display: block;
+  margin: auto;
+  max-width: 1289px;
 }
 #paracll {
   display: none;
@@ -180,14 +182,12 @@ article div h2 {
 .container {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
-  max-width: 950px; /* 5 itens de 180px + 4 gaps de 10px = 950px */
+  gap: 3px;
 }
 .item {
   width: 245px;
 }
 article img {
-  width: 245px;
   height: 140px;
   border-radius: 2px;
   padding-top: 10px;
