@@ -22,7 +22,7 @@ document.querySelectorAll(".carrossel-container").forEach(initCarrossel);
 
 function initCarrossel(article) {
   const container = article.querySelector(".cardsCarrossel");
-  const cards = container.querySelectorAll(".card");
+  const cards = container.querySelectorAll(".card, .cardTop");
   const visibleCards = 5; // Quantos cards são exibidos por vez
   let index = 0; // Índice atual do carrossel
   const cardWidth = cards[0].offsetWidth + 10; // Largura de cada card (incluindo espaço)
@@ -53,7 +53,7 @@ function initCarrossel(article) {
     container.style.transform = `translateX(${-index * cardWidth}px)`;
 
     setTimeout(() => {
-      const totalCards = container.querySelectorAll(".card").length;
+      const totalCards = container.querySelectorAll(".card, .cardTop").length;
 
       // Se chegou no final (clones), volta para o início real
       if (index >= totalCards - visibleCards) {

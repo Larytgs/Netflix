@@ -177,13 +177,24 @@ header #titulos p:hover {
   display: flex;
   flex-flow: row nowrap;
   box-sizing: content-box;
-  gap: 0.5%;
+  gap: 0.3%;
   padding-left: 4%;
 }
 .card {
   /*cada filmes/series*/
   width: 245px;
   height: 140px;
+  border-radius: 2px;
+  padding-top: 10px;
+  cursor: pointer;
+  flex-shrink: 0; /* Impede que os cards diminuam */
+  flex-grow: 1;
+  text-align: left;
+}
+.cardTop {
+  /*cada top10 filmes/series*/
+  width: 245px;
+  height: 180px;
   border-radius: 2px;
   padding-top: 10px;
   cursor: pointer;
