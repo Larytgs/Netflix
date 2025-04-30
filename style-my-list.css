@@ -1,374 +1,407 @@
 @charset "UTF8";
 
 @font-face {
-    font-family: 'Elegante';
-    src: url(fontes/Elegante\ Classica.ttf);
+  font-family: "Elegante";
+  src: url(fontes/Elegante\ Classica.ttf);
 }
 
-*{
-    margin: 0%;
-    padding: 0%;
-    font-family: Arial, Helvetica, sans-serif;
+* {
+  margin: 0%;
+  padding: 0%;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-body{
-    color: white;
-    background-color: #141414;
+body {
+  color: white;
+  background-color: #141414;
 
-    overflow-x: hidden; /*tirando a rolagem horizontal*/
+  overflow-x: hidden; /*tirando a rolagem horizontal*/
 }
 
-header{
-    position: sticky; /*grudavel*/
-    top: -1px;
-    background-color: #07070727;
+header {
+  position: sticky; /*grudavel*/
+  top: -1px;
+  background-color: #07070727;
 }
 header div {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 3px;
+}
+header #logogrande {
+  margin-left: -14px;
+  margin-right: -50px;
+  width: 115px;
+  height: 50px;
+  cursor: pointer;
+}
+#primeiroID {
+  display: none;
+}
+header h2,
+#logo,
+nav {
+  display: none;
+}
+header #chrome,
+#botoes {
+  display: none;
+}
+
+header p {
+  cursor: pointer;
+  padding-top: 20px;
+  padding-left: 19px;
+  font-size: 0.8em;
+  font-weight: 600;
+  color: #ffffffc0;
+}
+header p:hover {
+  /*p tds ficarem mais escuros*/
+  color: #ffffff83;
+  /*colocar um tempo*/
+}
+header a {
+  text-decoration: none;
+  color: #ffffffdc;
+}
+header a:hover {
+  /*p ele ficar mais escuro tb*/
+  color: #ffffff83;
+  transition: 0.5s;
+}
+
+#titulos {
+  margin-right: 25%;
+}
+#iconeslat {
+  margin-top: 10px;
+  margin-right: 5%;
+}
+#lupa {
+  width: 28px;
+  height: 26px;
+  padding-top: 3px;
+  /*colocar animation na lupa*/
+}
+#sino {
+  width: 28px;
+  height: 24px;
+  margin-right: 5px;
+  padding-top: 5px;
+}
+
+#iconeslatcll {
+  display: none;
+}
+#sominhaimg {
+  display: none;
+}
+#imgcseta {
+  display: block;
+  width: 53px;
+  height: 33px;
+  cursor: pointer;
+}
+#oculto {
+  display: block;
+}
+
+#oculto #principal {
+  display: none;
+}
+#oculto:hover #principal {
+  display: block;
+  position: absolute;
+
+  background-color: rgba(0, 0, 0, 0.904);
+  height: 355px;
+  width: 200px;
+  margin-top: 1.6%;
+  margin-left: -12%;
+}
+#principal img {
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  left: 7px;
+  top: 5px;
+}
+#principal a {
+  position: relative;
+  display: flex;
+  text-decoration: none;
+  cursor: pointer;
+}
+#principal p {
+  display: inline;
+  margin-top: -9px;
+  margin-left: 28px;
+  padding-bottom: 10px;
+  font-size: 0.8em;
+  font-weight: 500;
+  color: white;
+}
+#principal p:hover {
+  text-decoration: underline;
+}
+#iconesmenor {
+  display: flex;
+  flex-direction: column;
+}
+#iconesmenor img {
+  width: 25px;
+  height: 25px;
+  padding-left: 7px;
+}
+#sair {
+  font-size: 0.9em;
+  color: white;
+  font-weight: 600;
+  padding-top: 10px;
+  margin-left: 20%;
+}
+
+#paranote {
+  display: block;
+}
+#paracll {
+  display: none;
+}
+
+article div h2 {
+  font-size: 1.5em;
+  font-weight: 100;
+  color: rgba(255, 255, 255, 0.863);
+  padding-left: 4%;
+  padding-top: 28px;
+  padding-bottom: 8%;
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  max-width: 950px; /* 5 itens de 180px + 4 gaps de 10px = 950px */
+}
+.item {
+  width: 245px;
+}
+article img {
+  width: 245px;
+  height: 140px;
+  border-radius: 2px;
+  padding-top: 10px;
+  cursor: pointer;
+  width: 100%;
+  display: block;
+}
+.primeiro {
+  padding-left: 4%;
+}
+#ultimo {
+  margin-bottom: 2%;
+}
+
+@media (max-width: 850px) {
+  header div {
     display: flex;
     justify-content: space-between;
     padding-top: 3px;
-}
-header #logogrande{
-    margin-left: -14px; margin-right: -50px;
-    width: 115px;  height: 50px;
+  }
+  header #logogrande {
+    margin-left: -300%;
+    margin-right: -50px;
+    width: 115px;
+    height: 50px;
     cursor: pointer;
-}
-#primeiroID{
+  }
+  #titulos {
     display: none;
-}
-header h2, #logo, nav{
-    display: none;
-}
-header #chrome, #botoes{
-    display: none;
+  }
 }
 
-header p{
-    cursor: pointer;
-    padding-top: 20px;
-    padding-left: 19px;
-    font-size: 0.8em;
-    font-weight: 600;
-    color: #ffffffc0;
-}
-header p:hover{ /*p tds ficarem mais escuros*/
-    color: #ffffff83;
-    /*colocar um tempo*/
-}
-header a{
-    text-decoration: none; color: #ffffffdc
-}
-header a:hover{ /*p ele ficar mais escuro tb*/
-    color: #ffffff83;
-    transition: 0.5s;
-}
-
-#titulos{
-    margin-right: 25%;
-    
-}
-#iconeslat{
-    margin-top: 10px;
-    margin-right: 5%;
-}
-#lupa{
-    width: 28px; height: 26px;
+@media (max-width: 730px) {
+  header div {
+    display: flex;
+    justify-content: space-between;
     padding-top: 3px;
-    /*colocar animation na lupa*/
-}
-#sino{
-    width: 28px; height: 24px;
-    margin-right: 5px;
-    padding-top: 5px;
-}
+  }
+  header #logogrande,
+  #titulos,
+  #iconeslat {
+    display: none;
+  }
 
-#iconeslatcll{
-    display: none;
-}
-#sominhaimg{
-    display: none;
-}
-#imgcseta{
+  header nav {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+  }
+  nav img {
+    width: 28px;
+    height: 25px;
+  }
+  header #T1 {
+    display: flex;
+    font-size: 1.3em;
+    padding-right: 123px;
+  }
+  #lapis {
+    width: 28px;
+    height: 25px;
+  }
+  header #T2 {
     display: block;
-    width: 53px; height: 33px;
+    margin-top: 14px;
+    font-size: 1.1em;
+    margin-left: 15px;
+  }
+
+  header #botoes {
+    display: block;
+  }
+  header #botoes button {
     cursor: pointer;
-}
-#oculto{
-    display: block;
-}
-
-#oculto #principal{
-    display: none;  
-}
-#oculto:hover #principal{
-    display: block;
-    position: absolute;
-
-    background-color: rgba(0, 0, 0, 0.904);
-    height: 355px; width: 200px;
-    margin-top: 1.6%;
-    margin-left: -12%;
-}
-#principal img{
-    position: absolute;
-    width: 32px; height: 32px;
-    left: 7px;
-    top: 5px;
-}
-#principal a{
-    position: relative;
-    display: flex;
-    text-decoration: none;
-    cursor: pointer;  
-}
-#principal p{
-    display: inline;
-    margin-top: -9px;
-    margin-left: 28px;
-    padding-bottom: 10px;
-    font-size: 0.8em;
-    font-weight: 500;
-    color: white;
-}
-#principal p:hover{
-    text-decoration: underline;
-}
-#iconesmenor{
-    display: flex;
-    flex-direction: column;
-}
-#iconesmenor img{
-    width: 25px; height: 25px;
-    padding-left: 7px;
-}
-#sair{
-    font-size: 0.9em;
-    color: white;
-    font-weight: 600;
-    padding-top: 10px;
-    margin-left: 20%;
-}
-
-
-#paranote{
-    display: block;
-}
-#paracll{
-    display: none;
-}
-article div h2{
-    font-size: 1.5em;
-    font-weight: 100;
+    background-color: #2e2e2ec4;
     color: rgba(255, 255, 255, 0.863);
-    padding-left: 4%;
-    padding-top: 28px;
-    padding-bottom: 8%;
+    border: 1px solid rgba(255, 255, 255, 0.76);
+    border-radius: 15px;
+    font-size: 0.8em;
+    padding: 5px 11px 5px 11px;
+    margin: 1px -10px 6px 15px;
+  }
+  header #botoes img {
+    display: inline;
+    width: 15px;
+    height: 15px;
+    margin: -3px;
+    margin-left: 1px;
+    padding: 0px;
+  }
 }
-article div img{
-    width: 245px; height: 140px;
-    border-radius: 2px;
-    padding-top: 10px;
+
+@media (max-width: 450px) {
+  body {
+    background-color: #000000;
+    overflow-x: visible; /*tirando a rolagem horizontal*/
+  }
+
+  header {
+    background-color: #070707af;
+    position: sticky; /*grudavel*/
+    top: -1px;
+    /*tentar tirar o backgroung*/
+  }
+  header #logogrande,
+  #titulos,
+  #iconeslat,
+  #paranote {
+    display: none;
+  }
+
+  header nav {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+  }
+  nav img {
+    width: 28px;
+    height: 25px;
+  }
+  header #T1 {
+    display: flex;
+    font-size: 1.3em;
+    padding-right: 155px;
+  }
+  #lapis {
+    width: 28px;
+    height: 25px;
+  }
+  header #T2 {
+    display: block;
+    margin-top: 14px;
+    font-size: 1.1em;
+    margin-left: 15px;
+  }
+
+  header #botoes {
+    display: block;
+  }
+  header #botoes button {
     cursor: pointer;
-}
-.primeiro{
-    padding-left: 4%;
-}
-#ultimo{
-    margin-bottom: 2%;
-}
+    background-color: #2e2e2ec4;
+    color: rgba(255, 255, 255, 0.863);
+    border: 1px solid rgba(255, 255, 255, 0.76);
+    border-radius: 15px;
+    font-size: 0.8em;
+    padding: 5px 11px 5px 11px;
+    margin: 10px -10px 6px 15px;
+  }
+  header #botoes img {
+    display: inline;
+    width: 15px;
+    height: 15px;
+    margin: -3px;
+    margin-left: 1px;
+    padding: 0px;
+  }
 
+  main #paracll {
+    display: block;
+  }
+  article div p {
+    color: white;
+    margin-top: 3%;
+    margin-left: 2%;
+    margin-bottom: -5%;
+    font-size: 0.8em;
+    font-weight: 600;
+  }
+  article div div {
+    display: flex;
+  }
+  article div div h2 {
+    font-size: 1.2em;
+    color: white;
+    padding-left: 2%;
+    font-weight: 600;
+    padding-bottom: 5px;
+  }
+  article div div img {
+    width: 10px;
+    height: 10px;
+    margin-top: 26px;
+    margin-left: 5px;
+  }
 
-
-@media (max-width: 850px){
-    
-    header div {
-        display: flex;
-        justify-content: space-between;
-        padding-top: 3px;
-    }
-    header #logogrande{
-        margin-left: -300%; margin-right: -50px;
-        width: 115px;  height: 50px;
-        cursor: pointer;
-    }
-    #titulos{
-        display: none;
-    }
-}
-
-@media (max-width: 730px){
-    
-    header div {
-        display: flex;
-        justify-content: space-between;
-        padding-top: 3px;
-    }
-    header #logogrande, #titulos, #iconeslat{
-        display: none;
-    }
-
-    header nav{
-        display: flex;
-        justify-content: space-between;
-        margin: 10px;
-    }
-    nav img{
-        width: 28px; height: 25px;
-    }
-    header #T1{
-        display: flex;
-        font-size: 1.3em;
-        padding-right: 123px;
-    }
-    #lapis{
-        width: 28px; height: 25px; 
-    }
-    header #T2{
-        display: block;
-        margin-top: 14px;
-        font-size: 1.1em;
-        margin-left: 15px;
-    }
-
-    
-    header #botoes{
-        display: block;
-    }
-    header #botoes button{
-        cursor: pointer;
-        background-color: #2e2e2ec4;
-        color: rgba(255, 255, 255, 0.863);
-        border: 1px solid rgba(255, 255, 255, 0.76);
-        border-radius: 15px;
-        font-size: 0.8em;
-        padding: 5px 11px 5px 11px;
-        margin: 1px -10px 6px 15px;
-    }
-    header #botoes img{
-        display: inline;
-        width: 15px; height: 15px;
-        margin: -3px;
-        margin-left: 1px;
-        padding: 0px;
-    }
-}
-
-@media (max-width: 450px){  
- 
-    body{
-        background-color: #000000;
-        overflow-x: visible; /*tirando a rolagem horizontal*/
-    }
-
-    header{
-        background-color: #070707af;
-        position: sticky; /*grudavel*/
-        top: -1px;
-        /*tentar tirar o backgroung*/
-    }
-    header #logogrande, #titulos, #iconeslat, #paranote{
-        display: none;
-    }
-
-    header nav{
-        display: flex;
-        justify-content: space-between;
-        margin: 10px;
-    }
-    nav img{
-        width: 28px; height: 25px;
-    }
-    header #T1{
-        display: flex;
-        font-size: 1.3em;
-        padding-right: 155px;
-    }
-    #lapis{
-        width: 28px; height: 25px; 
-    }
-    header #T2{
-        display: block;
-        margin-top: 14px;
-        font-size: 1.1em;
-        margin-left: 15px;
-    }
-
-    
-    header #botoes{
-        display: block;
-    }
-    header #botoes button{
-        cursor: pointer;
-        background-color: #2e2e2ec4;
-        color: rgba(255, 255, 255, 0.863);
-        border: 1px solid rgba(255, 255, 255, 0.76);
-        border-radius: 15px;
-        font-size: 0.8em;
-        padding: 5px 11px 5px 11px;
-        margin: 10px -10px 6px 15px;
-    }
-    header #botoes img{
-        display: inline;
-        width: 15px; height: 15px;
-        margin: -3px;
-        margin-left: 1px;
-        padding: 0px;
-    }
-
-    main #paracll{
-        display: block;
-    }
-    article div p{
-        color: white;
-        margin-top: 3%;
-        margin-left: 2%;
-        margin-bottom: -5%;
-        font-size: 0.8em;
-        font-weight: 600;
-    }
-    article div div {
-        display: flex;
-    }
-    article div div h2{
-        font-size: 1.2em;
-        color: white;
-        padding-left: 2%;
-        font-weight: 600;
-        padding-bottom: 5px;
-    }
-    article div div img{
-        width: 10px; height: 10px;
-        margin-top: 26px;
-        margin-left: 5px;
-    }
-
-    article #fotos{
-        display: block;
-    }
-    article div nav{
-        display: flex; /*coloquei na lateral os icones*/
-        justify-content: space-between; /*espaçamento igual*/
-    }
-    article #fotos img{
-        display: flex;
-        width: 145px; height: 80px;
-        border-radius: 10px;
-        margin: 0px;
-        margin-left: 5px;
-    }
-    article #fotos p{
-        font-size: 0.8em;
-        margin-top: 40px;
-    }
-    article #fotos .play{
-        width: 35px; height: 35px;
-        margin-top: 15px;
-    }
-    .primeiro{
-        padding-left: 0%;
-    }
-    #ultimo{
-        margin-bottom: 20px;
-    }
-
+  article #fotos {
+    display: block;
+  }
+  article div nav {
+    display: flex; /*coloquei na lateral os icones*/
+    justify-content: space-between; /*espaçamento igual*/
+  }
+  article #fotos img {
+    display: flex;
+    width: 145px;
+    height: 80px;
+    border-radius: 10px;
+    margin: 0px;
+    margin-left: 5px;
+  }
+  article #fotos p {
+    font-size: 0.8em;
+    margin-top: 40px;
+  }
+  article #fotos .play {
+    width: 35px;
+    height: 35px;
+    margin-top: 15px;
+  }
+  .primeiro {
+    padding-left: 0%;
+  }
+  #ultimo {
+    margin-bottom: 20px;
+  }
 }
