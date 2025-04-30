@@ -35,16 +35,13 @@ function initCarrossel(article) {
   // Define a largura total do container (com os clones)
   container.style.width = `${(cards.length + visibleCards) * cardWidth}px`;
 
-  // Seleciona os botões dentro do article
+  // Botões
   const leftBtn = article.querySelector(".control-left");
   const rightBtn = article.querySelector(".control-right");
 
-  // Evento para mover para a esquerda
   leftBtn.addEventListener("click", () => move(-1));
-  // Evento para mover para a direita
   rightBtn.addEventListener("click", () => move(1));
 
-  // Função que move o carrossel
   function move(direction) {
     index += direction; // Atualiza índice de acordo com a direção
 
