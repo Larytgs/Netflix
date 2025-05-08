@@ -187,6 +187,7 @@ footer a:hover {
 @media (max-width: 450px) {
   body {
     overflow-x: hidden; /*tirando a rolagem horizontal*/
+    overflow-y: hidden; /*tirando a rolagem vertical*/
   }
 
   /* partedegerenciarperfis:  */
@@ -226,7 +227,7 @@ footer a:hover {
     /*seta*/
     width: 30px;
     height: 25px;
-    margin-left: 0%;
+    margin-left: -50%;
   }
   header h2 {
     margin-top: 10%;
