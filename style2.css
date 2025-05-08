@@ -347,6 +347,17 @@ footer {
     padding-bottom: 5px;
   }
 
+  #imagemgrande {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100vw;
+  }
+  .espaco {
+    height: 235px;
+  }
+
   .carrossel-container {
     overflow: visible;
     /* width: max-content; */
@@ -374,12 +385,35 @@ footer {
 }
 
 @media (max-width: 700px) {
+  header {
+    position: sticky; /*grudavel*/
+    top: -1px;
+    background: linear-gradient(to bottom, black, transparent);
+    transition: background 0.3s ease;
+    z-index: 10;
+  }
   header #logogrande {
     margin-left: 35px;
     margin-right: 15px;
     width: 100px;
     height: 40px;
     cursor: pointer;
+  }
+
+  #imagemgrande {
+    display: none;
+  }
+  .espaco {
+    display: none;
+  }
+  #entradaDoCelular {
+    display: block;
+  }
+  #imagemInicioCelular {
+    width: 90%;
+    display: block;
+    margin: 30px auto;
+    border-radius: 20px;
   }
 }
 
