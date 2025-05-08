@@ -158,9 +158,9 @@ header #titulos p:hover {
   margin-left: 20%;
 }
 
-main {
+/* main {
   width: 100vw;
-}
+} */
 
 #imagemgrande {
   position: absolute;
@@ -245,7 +245,7 @@ main {
 .control-right {
   top: 0;
   bottom: 0;
-  left: auto;
+  left: 50px;
   right: 0;
 }
 
