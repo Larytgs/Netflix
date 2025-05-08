@@ -105,6 +105,62 @@ footer a:hover {
     font-size: 2em;
   }
 
+  /*Parte de gerenciar perfis:*/
+  #gerenciarperfil {
+    display: flex;
+    margin-top: 0%;
+    margin-bottom: 70px;
+    margin-left: -40%;
+  }
+  #gerenciarperfil img {
+    display: block; /*para aparecer a imagem*/
+    width: 20px;
+    height: 15px;
+    margin: 0px; /*para tirar o estilo da parte inicial*/
+    margin-right: 10px; /*distanciar do titulo*/
+  }
+  #gerenciarperfil h2 {
+    font-size: 1.2em;
+  }
+
+  /*Parte inicial:*/
+  header {
+    margin-top: 0%;
+  }
+  header div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 70px;
+  }
+  header div img {
+    display: block;
+    width: 120px;
+    height: 51px;
+    margin-left: 25%;
+    margin-right: 50%;
+  }
+  header div a img {
+    width: 30px;
+    height: 25px;
+    margin-right: 10px;
+  }
+  header h2 {
+    margin-top: 10%;
+    font-size: 1.2em;
+    text-align: center;
+  }
+
+  main nav {
+    display: block;
+    columns: 2;
+  }
+  main nav img {
+    width: 100px;
+    height: 100px;
+    padding: 0%;
+    margin-top: 10px;
+  }
+
   main div a {
     padding-right: 0px;
   }
@@ -133,7 +189,7 @@ footer a:hover {
     overflow-x: hidden; /*tirando a rolagem horizontal*/
   }
 
-  /*Parte de gerenciar perfis:*/
+  /* partedegerenciarperfis:  */
   #gerenciarperfil {
     display: flex;
     margin-top: 0%;
@@ -146,35 +202,31 @@ footer a:hover {
     height: 15px;
     margin: 0px; /*para tirar o estilo da parte inicial*/
     margin-right: 10px; /*distanciar do titulo*/
-    /* display: flex;
-    width: 20px;
-    height: 15px;
-    margin: 0px; /*para tirar o estilo da parte inicial*/
-    /*margin-right: 10px;
-    padding-bottom: 70px; */
   }
   #gerenciarperfil h2 {
     font-size: 1.2em;
   }
 
   /*Parte inicial:*/
+  header {
+    margin-top: 0%;
+  }
   header div {
     display: flex;
     align-items: center;
-    justify-content: center; /*espaçamento igual*/
+    margin-bottom: 70px;
   }
   header div img {
-    display: inline;
+    display: block;
     width: 120px;
     height: 51px;
-    margin-top: 10px;
-    margin-left: 100px;
+    margin-left: 25%;
   }
   header div a img {
+    /*seta*/
     width: 30px;
-    height: 30px;
-    margin-left: 85px;
-    margin-right: 10px;
+    height: 25px;
+    margin-left: 0%;
   }
   header h2 {
     margin-top: 10%;
