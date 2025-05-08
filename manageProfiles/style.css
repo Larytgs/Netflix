@@ -215,7 +215,7 @@ footer a:hover {
   header div {
     display: flex;
     align-items: center;
-    margin-bottom: 70px;
+    margin-bottom: 0px;
   }
   header div img {
     display: block;
