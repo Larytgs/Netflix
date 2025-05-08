@@ -162,6 +162,10 @@ header #titulos p:hover {
   height: 535px; /* igual ao #imagemgrande */
 }
 
+#entradaDoCelular {
+  display: none;
+}
+
 #primeiroarticle {
   z-index: 1;
 }
@@ -461,8 +465,22 @@ footer {
     padding-left: 2%;
     padding-top: 35px;
   }
-  article #imagemgrande {
+
+  #imagemgrande {
     display: none;
+  }
+  .espaco {
+    display: none;
+  }
+
+  #entradaDoCelular {
+    display: block;
+  }
+  #imagemInicioCelular {
+    width: 90%;
+    display: block;
+    margin: 30px auto;
+    border-radius: 20px;
   }
 
   .continuar1 {
