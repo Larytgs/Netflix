@@ -161,9 +161,6 @@ header #titulos p:hover {
 main {
   width: 100vw;
 }
-article {
-  width: 100vw;
-}
 
 #imagemgrande {
   position: absolute;
@@ -172,7 +169,7 @@ article {
   z-index: -1; /* se quiser que ele fique atrás */
 }
 .espaco {
-  height: 535px; /* igual ao #imagemgrande */
+  height: 520px; /* igual ao #imagemgrande */
 }
 
 #entradaDoCelular {
@@ -352,7 +349,7 @@ footer {
 
   .carrossel-container {
     overflow: visible;
-    width: max-content;
+    /* width: max-content; */
   }
   .cardsCarrossel {
     /*todos os filmes/series*/
