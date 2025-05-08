@@ -553,6 +553,11 @@ footer {
     height: 170px;
   }
 
+  .carrossel-container {
+    /*toda a tabela, junto c os botoes*/
+    width: 100vw;
+  }
+
   article #primeiroarticle {
     display: none;
   }
