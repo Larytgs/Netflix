@@ -5,6 +5,7 @@
 <img src="imagens/replica Netflix.png"></img>
 
 Desenvolvi um projeto que recria a experiência de uma réplica da Netflix, com uma interface fluida e moderna. Foi uma oportunidade incrível para aplicar e aprimorar minhas habilidades em desenvolvimento front-end !
+
 Utilizei:
 
 - HTML para estruturar a interface
